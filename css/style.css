@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+/*Home selectors*/
+body{
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    direction: ltr;
+    background-color: #fafafa;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+/*Heading*/
+header{
+    background: url(../images/home/header.png) no-repeat center;
+    background-size: cover;
+    color: #ffffff;
+    padding-top: 20px;
+    min-height: 100vh;
+}
+
+header .heading{
+    padding-bottom: 60px;
+    border-bottom: 1px solid beige;
+}
+
+header a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+header a:hover{
+    color: #cccccc;
+}
+
+header li, footer li{
+    float: left;
+    display: inline;
+    padding: 0 20px;
+}
+
+header #branding{
+    float: left;
+    padding: 0 10px;
+}
+
+header #branding h1{
+    margin: 0;
+}
+
+header nav{
+    float: right;
+    margin-top: 5px;
+}
+
+header .current a{
+    color: #cccccc;
+    font-weight: bold;
+}
+
+/*Heading => Showcase*/
+#showcase{
+    text-align: center;
+    color: #ffffff;
+}
+
+#showcase h1{
+    margin-top: 35vh;
+    font-size: 55px;
+    margin-bottom: -5px;
+}
+
+#showcase p{
+    font-size: 60px;
+    color: #000;
+    margin: 0;
+}
+
+/*About*/
+.about{
+    overflow: hidden;
+    margin: auto;
+}
+.photo{
+    float: right;
+    max-width: 50%;
+    max-height: 570px;
+    background: no-repeat center;
+    background-size: cover;
+}
+
+.photo img {
+    width: 10in;
+}
+
+.message{
+    float: left;
+    padding: 2%;
+    max-width: 46%;
+    text-align: justify;
+    color: #000;
+}
+
+/*Newsletter*/
+#newsletter{
+    padding: 15px;
+    color: #fff;
+    background: #353637;
+}
+
+#newsletter h1{
+    float: left;
+}
+
+#newsletter i{
+    margin-right: 5px;
+}
+
+#newsletter form{
+    float: right;
+    margin-top: 15px;
+}
+
+#newsletter input[type="email"]{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+    font-weight: bold;
+}
+
+.button{
+    height: 38px;
+    background: #cccccc;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
+}
+
+.button:hover{
+    background-color: #353637;
+    color: #cccccc;
+}
+
+/*Process*/
+.process h4{
+    text-align: center;
+    font-size: 30px;
+}
+
+.img{
+    min-height: 50vw;
+    background: url(../images/home/process.png) no-repeat center;
+    background-size: cover;
+}
+
+/*Boxes*/
+#boxes{
+    min-height: 10vw;
+    background: url(../images/home/services.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #FAFAFA;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+#boxes h1{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+#boxes .box{
+    float: right;
+    text-align: center;
+    width: 30%;
+    padding: 17px;
+}
+
+#boxes i{
+    font-size: 75px;
+    transition: all 2s ease;
+}
+
+#boxes i:hover{
+    color: #cccccc;
+}
+
+/*Footer*/
+footer p{
+    float: left;
+}
+footer nav{
+    float: right;
+    margin-top: 16px;
+}
+
+footer .current a{
+    color: #353637;
+    font-weight: bold;
+}
+
+footer a{
+    text-decoration: none;
+    color: #000;
+}
+
+footer a:hover{
+    color: #353637;
+    font-weight: bold;
+}
+
+
+/*
+┌──────────────────────────────────────────┐
+│                Media Query               │
+└──────────────────────────────────────────┘
+*/
+@media (max-width: 1199.98px) {  }
+@media (max-width: 991.98px) {
+
+    section#newsletter .container h1 {
+        font-size: 20px;
+    }
+
+    section#boxes .container {
+        width: 100%;
+    }
+
+    section#newsletter .container,
+    footer .container {
+        width: 95%;
+    }
+}
+@media (max-width: 767.98px) {
+    .photo{
+        display: none;
+    }
+    
+    .message{
+        max-width: 800px;
+    }
+
+    section#boxes .container {
+        width: 80%;
+    }
+
+    #boxes .box {
+        float: none;
+        text-align: center;
+        width: 90%;
+    }
+
+    #newsletter h1,
+    #newsletter form {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    section#newsletter .container h1 {
+        font-size: 1.5em;
+        margin-top: 0;
+    }
+
+
+    #showcase p {
+        font-size: 45px;
+    }
+    
+}
+@media (max-width: 575.98px) {
+    #showcase h1 {
+        font-size: 50px;
+    }
+
+    #showcase p {
+        font-size: 40px;
+    }
+
+    header li, footer li {
+        padding: 0 10px;
+    }
+}
+@media (max-width: 500.98px) {
+    header nav,
+    header nav li,
+    header #branding,
+    footer p,
+    footer nav,
+    footer nav li {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header .heading{
+        padding-bottom: 20px;
+    }
+
+    header #branding {
+        padding: 0;
+    }
+    
+    header ul{
+        padding-top: 10px;
+    }
+
+    header #branding h1{
+        font-size: 40px;
+    }
+
+    header{
+        padding: 10px 0 20px 0;
+    }
+
+    #showcase h1 {
+        font-size: 45px;
+    }
+
+    #showcase p {
+        font-size: 35px;
+    }
+}
+@media (max-width: 450.98px) {
+    #showcase h1 {
+        font-size: 40px;
+    }
+
+    #showcase p {
+        font-size: 33px;
+    }
+
+    #newsletter input[type="email"] {
+        width: 60%;
+    }
+}
+@media (max-width: 400.98px) {
+    #showcase p {
+        font-size: 29px;
+    }
+
+    section#newsletter .container h1 {
+        font-size: 1.3em;
+    }
+    
+    .button {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+@media (max-width: 350.98px) {
+    section#newsletter .container h1 {
+        font-size: 17px;
+    }
+
+    #newsletter input[type="email"] {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    #showcase h1 {
+        font-size: 35px;
+    }
+
+    #showcase p {
+        font-size: 25px;
+    }
+}
+@media (max-width: 300.98px) {  }
+
+/*
+┌──────────────────────────────────────────┐
+│         Coding by M. Shikh Taleb         │
+│            www.shikhtaleb.net            │
+└──────────────────────────────────────────┘
+*/
